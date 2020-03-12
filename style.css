@@ -16,8 +16,7 @@ html {
     src: url(SF-Pro-Display-Light.otf);
 }
 
-a,
-a:hover {
+a, a:hover {
     color: #333;
     text-decoration: none;
     font-weight: 400;
