@@ -16,7 +16,8 @@ html {
     src: url(SF-Pro-Display-Light.otf);
 }
 
-a, a:hover {
+a,
+a:hover {
     color: #333;
     text-decoration: none;
     font-weight: 400;
@@ -25,6 +26,14 @@ a, a:hover {
 
 img {
     max-width: 100%;
+}
+
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: 2s particle;
 }
 
 @keyframes fadeIn {
@@ -38,6 +47,16 @@ img {
     }
 }
 
+@keyframes particle {
+    0%,
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .everything {
     position: relative;
     top: 0px;
@@ -45,69 +64,107 @@ img {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    animation: .2s fadeIn;
+    animation: .5s fadeIn;
 }
 
 .content {
     position: absolute;
-    width: 305px;
+    width: 180px;
     top: 50%;
-    left: calc(50% - 150px);
-    transform: translateY( -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .filipbaotic {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, .4) url(logo.jpg);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, .1);
-    border-radius: 5px;
-    margin-bottom: -80px;
+    width: 180px;
+    min-height: 180px;
+    background: #fff url(images/bg2.jpg);
+    background-size: 220%;
+    background-position: 53% 37%;
+    overflow: hidden!important;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, .1);
+    border-radius: 7.5px;
+    margin-bottom: 20px;
 }
 
-.gits {
+.social {
     position: relative;
-    top: 0px;
-    left: 70px;
-    width: 235px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, .4);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, .1);
-    border-radius: 5px;
+    margin-top: 180px;
+    width: 180px;
+    height: 40px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: auto 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .7;
     transition-duration: .2s;
 }
 
-.gits div {
+.icon:hover {
+    opacity: 1;
+    transition-duration: .2s;
+}
+
+.fb {
+    background-image: url(images/facebook.png);
+}
+
+.ig {
+    background-image: url(images/instagram.png);
+}
+
+.tw {
+    background-image: url(images/twitter.png);
+}
+
+.px {
+    background-image: url(images/500px.png);
+}
+
+.un {
+    background-image: url(images/unsplash.png);
+}
+
+.sh {
+    background-image: url(images/shutterstock.png);
+}
+
+.fr {
+    background-image: url(images/freelancer.png);
+}
+
+.links {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, .1);
+    border-radius: 7.5px;
+    transition-duration: .2s;
+}
+
+.links a {
     display: block;
-    padding: 12px 15px;
+    padding: 13px 15px;
     border-top: 1px solid rgba(0, 0, 0, .2);
     transition-duration: .2s;
 }
 
-.gits div:hover {
+.links a:hover {
     background: rgba(0, 0, 0, .03);
     transition-duration: .2s;
 }
 
-.gits div:first-child {
+.links a:first-child {
     border-top: 1px solid transparent;
-}
-
-.gits name {
-    font-weight: 600;
-}
-
-.gits a {
-    font-size: 13px;
-    display: inline-block;
-    margin: 0 3px;
 }
