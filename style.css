@@ -50,7 +50,7 @@ img {
 
 .content {
     position: absolute;
-    width: 300px;
+    width: 305px;
     top: 50%;
     left: calc(50% - 150px);
     transform: translateY( -50%);
@@ -76,7 +76,7 @@ img {
     position: relative;
     top: 0px;
     left: 70px;
-    width: 230px;
+    width: 235px;
     overflow: hidden;
     background: rgba(255, 255, 255, .4);
     -webkit-backdrop-filter: blur(3px);
