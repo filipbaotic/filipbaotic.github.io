@@ -1,9 +1,9 @@
 body,
 html {
-    background: #ffffff;
+    background: rgb(120, 147, 149);
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
-    color: #333;
+    color: #111;
     letter-spacing: -0.5px;
     margin: 0;
     padding: 0;
@@ -13,12 +13,13 @@ html {
     align-content: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap');
 
 a, a:hover {
-    color: #333;
+    color: #111;
     text-decoration: none;
     font-weight: 400;
+    font-style: italic;
     transition-duration: .2s;
 }
 
@@ -38,38 +39,19 @@ img {
 }
 
 .content {
-    width: 305px;
+    width: 280px;
     margin: 20px 0;
+    z-index: 999;
     animation: .2s fadeIn;
 }
 
-.filipbaotic {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, .4) url(logo.jpg);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    box-shadow: 0px 0px 24px 10px rgba(0, 0, 0, .05);
-    border-radius: 5px;
-    margin-bottom: -80px;
-}
-
 .gits {
-    position: relative;
-    top: 0px;
-    left: 70px;
-    width: 235px;
     overflow: hidden;
-    background: rgba(255, 255, 255, .4);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, .6);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    backdrop-filter: blur(14px) saturate(120%);
     box-shadow: 0px 0px 24px 10px rgba(0, 0, 0, .05);
-    border-radius: 5px;
+    border-radius: 4px;
     transition-duration: .2s;
 }
 
@@ -87,9 +69,16 @@ img {
 }
 
 .gits div:first-child {
-    border-top: 1px solid transparent;
+    border-top: 0px solid transparent;
 }
 
 .gits name {
     font-weight: 600;
+    font-style: normal;
+}
+
+#particles-js{
+   position: fixed;
+   top: 0; left: 0;
+   width: 100vw; height: 100vh;
 }
