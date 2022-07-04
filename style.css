@@ -1,20 +1,19 @@
 body,
 html {
     background: #ffffff;
-    font-family: SF Pro Display;
+    font-family: Inter;
     font-size: 14px;
     color: #333;
     letter-spacing: -0.3px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-@font-face {
-    font-family: SF Pro Display;
-    font-weight: 400;
-    src: url(SF-Pro-Display-Light.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 a, a:hover {
     color: #333;
@@ -38,23 +37,10 @@ img {
     }
 }
 
-.everything {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    animation: .2s fadeIn;
-}
-
 .content {
-    position: absolute;
     width: 305px;
-    top: 50%;
-    left: calc(50% - 150px);
-    transform: translateY( -50%);
-    margin: 24px 0;
+    margin: 20px 0;
+    animation: .2s fadeIn;
 }
 
 .filipbaotic {
@@ -90,7 +76,7 @@ img {
 .gits div {
     display: flex;
     justify-content: space-between;
-    padding: 12px 14px;
+    padding: 12px 16px;
     border-top: 1px solid rgba(0, 0, 0, .2);
     transition-duration: .2s;
 }
@@ -106,10 +92,4 @@ img {
 
 .gits name {
     font-weight: 600;
-}
-
-.gits a {
-    font-size: 13px;
-    display: inline-block;
-    margin: 0 3px;
 }
