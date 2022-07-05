@@ -97,3 +97,10 @@ img {
    top: 0; left: 0;
    width: 100vw; height: 100vh;
 }
+
+@media (max-width: 368px){
+    .content {
+        width: calc(100vw - 48px);
+        margin: 24px;
+    }
+}
