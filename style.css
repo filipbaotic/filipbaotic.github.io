@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body,
 html {
     background: rgb(120, 147, 149);
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #111;
     margin: 0;
@@ -11,8 +13,6 @@ html {
     align-items: center;
     align-content: center;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 a, a:hover {
     color: #111;
