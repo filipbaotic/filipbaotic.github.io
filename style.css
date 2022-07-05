@@ -1,10 +1,9 @@
 body,
 html {
     background: rgb(120, 147, 149);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
+    font-family: Inter;
+    font-size: 16px;
     color: #111;
-    letter-spacing: -0.5px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,14 +12,13 @@ html {
     align-content: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 a, a:hover {
     color: #111;
     text-decoration: none;
     font-weight: 400;
-    font-style: italic;
-    transition-duration: .2s;
+    transition: 0.3s ease-out;
 }
 
 img {
@@ -39,42 +37,59 @@ img {
 }
 
 .content {
-    width: 280px;
-    margin: 20px 0;
+    width: 320px;
+    margin: 24px 0;
     z-index: 999;
-    animation: .2s fadeIn;
+    animation: .3s fadeIn;
 }
 
 .gits {
     overflow: hidden;
-    background: rgba(255, 255, 255, .6);
-    -webkit-backdrop-filter: blur(14px) saturate(120%);
-    backdrop-filter: blur(14px) saturate(120%);
-    box-shadow: 0px 0px 24px 10px rgba(0, 0, 0, .05);
-    border-radius: 4px;
-    transition-duration: .2s;
+    background: #fff;
+    box-shadow: 0px 0px 0px 2px #000;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
 }
 
 .gits div {
     display: flex;
     justify-content: space-between;
-    padding: 10px 12px;
-    border-top: 1px solid rgba(0, 0, 0, .2);
-    transition-duration: .2s;
+    padding: 12px 16px;
+    border-top: 2px solid #000;
+    transition: 0.3s ease-out;
 }
 
 .gits div:hover {
-    background: rgba(0, 0, 0, .03);
-    transition-duration: .2s;
+    background: #f2f2f2;
+    transition: 0.3s ease-out;
 }
+
+.gits div name:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #111;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.gits div:hover name:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .gits div:first-child {
     border-top: 0px solid transparent;
+    background: #f2f2f2;
 }
 
 .gits name {
-    font-weight: 600;
-    font-style: normal;
+    font-weight: 500;
+    position: relative;
 }
 
 #particles-js{
